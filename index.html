@@ -1,28 +1,35 @@
-<!doctype html>
-<html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>无标题文档</title>
+<style type="text/css">
+
+#box {width:100px;height:100px;background-color:red;position:absolute;left:0px;top:0px}
+
+
+</style>
 </head>
 
-<body>
-	<script language="javascript">
-	function open_win()
-		{
-			win2=window.open("","test","width=800,height=600")
-			
-			win2.document.write("<p>vi jinx </p>");
-			win2.document.bgColor="red";
-			document.write("i love them"),
-				document.fgColor="yellow";
-			document.bgColor="lightgreen";
-			
-			
-			
-			
-		}
+
+<body >
+<div id="box"></div>
+
+<script language="javascript">
+<!--
+function Refurbish(){
+	// alert(event.keyCode);
+	 x=document.getElementById("box");
+	 if (event.keyCode==100) { x.style.left=x.offsetLeft+10+"px";  }
+	 if (event.keyCode==115) {x.style.top=x.offsetTop+10+"px";}
 	
-	</script>
-	<input type="button" onClick="open_win()" value="openwin" />
+		/* if (event.keyCode==65) x.style.left=x.offsetLeft-10+"px";  }
+	 if (event.keyCode==87) {x.style.top=x.offsetTop-10+"px";}*/
+	
+}
+document.onkeypress=Refurbish;
+//-->
+</script>
+
 </body>
 </html>
